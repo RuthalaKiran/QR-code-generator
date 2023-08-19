@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: aqua !important;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:start;
+}
+.row{
+    background-color: rgb(131, 236, 133);
+    padding: 10px;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 0 0px 10px 0 rgb(45, 103, 240);
+}
+.box{
+    display: flex;
+    flex-direction: column; 
+}
+.head{
+ font-size: 25px;
+}
+input{
+    width: 70%;
+   height: 40px;
+   border-radius: 5px;
+   outline: none;
+   border: 1px solid blueviolet;
+}
+input::placeholder{
+    color: red;
+   padding: 20px !important;
+}
+button{
+    width: 50%;
+    height: 40px;
+    color: black;
+    border: 1px solid blue;
+    border-radius: 5px !important;
+    background-color: white;
+    transition: .5s;
+    
+}
+button:hover{
+    border-radius: 40px !important;
+    outline: none;
+    border: 1px solid blue;
+    color: white !important;
+    background-color: black;
+}
+
+.code{
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+.qrcode{
+    width: 150px;
+    padding: 5px;
+    /* background-color: blue; */
+    border-radius: 5px;
+}
+.error{
+    animation: shake .1s linear 10;
+}
+@keyframes shake {
+    0%{
+    transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-2px);  
+    }
+    50%{
+        transform: translateX(0px);  
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0px); 
+    }
+}
+
+@media screen and (max-width:450px) {
+   .row{
+    width: 370px;
+   }
+}
+
+@media screen and (max-width:390px) {
+    .row{
+     width: 340px;
+    }
+    button{
+        font-size: 16px !important;
+        padding: 5px;
+        width: 60%;
+    }
+ }
